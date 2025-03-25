@@ -1,0 +1,1 @@
+SELECT firstName, lastName, dob, phoneNumber, emailAddress, address FROM Users;
