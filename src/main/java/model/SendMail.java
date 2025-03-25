@@ -4,6 +4,10 @@ import java.util.Properties;
 import javax.mail.*;
 import javax.mail.internet.*;
 
+/* I'D LIKE TO LET YOU KNOW THAT THIS CODE WILL NOT RUN UNTIL YOU INPUT YOUR SPECIFIC EMAIL ADDRESSES.
+ REFER TO YOUR MAIL HANDLERS (GMAIL, YAHOO, ETC.) TO GET THE SETUP PROCEDURE FOR EMAIL VIA THIRD-PARTY APPS
+ */
+
 public class SendMail {
 
     String host, port, emailid,username, password;
@@ -11,11 +15,11 @@ public class SendMail {
     Session l_session = null;
 
     public SendMail(String email) {
-        host = "smtp.mail.yahoo.com";
-        port = "587";
-        emailid = "jonesmwaniki@ymail.com";
-        username = "jonesmwaniki@ymail.com";
-        password = "bjqbbvsbaqlpylfd";
+        host = "smtp.mail";
+        port = "0";
+        emailid = "@your_email";
+        username = "@your_email";
+        password = "password";
 
         emailSettings();
         createSession();
